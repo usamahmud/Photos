@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" onKeyPressed="#arrowKey" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos.app.DisplayController">
+   <ImageView fx:id="imageView" fitHeight="600.0" fitWidth="1200.0" layoutX="40.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+   <Button fx:id="lButton" layoutX="1.0" layoutY="347.0" mnemonicParsing="false" onAction="#left" text="&lt;" />
+   <Button fx:id="rButton" layoutX="1253.0" layoutY="347.0" mnemonicParsing="false" onAction="#right" text="&gt;" />
+   <Text layoutX="324.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption" />
+   <Text layoutX="621.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+   <Text layoutX="905.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" />
+   <Text fx:id="caption" layoutX="400.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   <Text fx:id="date" layoutX="672.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   <Text fx:id="tags" layoutX="954.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	
+</AnchorPane>

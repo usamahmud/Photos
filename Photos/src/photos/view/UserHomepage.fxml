@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos.app.UserHomepageController">
+   <children>
+      <Text layoutX="249.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Albums" textAlignment="CENTER" wrappingWidth="101.13671875">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="logout" layoutX="483.0" layoutY="17.0" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" prefWidth="89.0" text="Logout" />
+      <TableView fx:id="albumList" layoutX="48.0" layoutY="74.0" prefHeight="260.0" prefWidth="493.0">
+         <columns>
+            <TableColumn fx:id="albumNameColumn" prefWidth="209.60003662109375" text="Album Name" />
+            <TableColumn fx:id="numPhotosColumn" prefWidth="55.199951171875" text="Photos" />
+            <TableColumn fx:id="dateRangeColumn" prefWidth="230.4000244140625" text="Date Range" />
+         </columns>
+      </TableView>
+      <Button layoutX="75.0" layoutY="358.0" mnemonicParsing="false" onAction="#createAlbum" prefHeight="31.0" prefWidth="59.0" text="Create" />
+      <Button layoutX="200.0" layoutY="358.0" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="31.0" prefWidth="59.0" text="Delete" />
+      <Button layoutX="317.0" layoutY="358.0" mnemonicParsing="false" onAction="#renameAlbum" prefHeight="31.0" prefWidth="66.0" text="Rename" />
+      <Button layoutX="454.0" layoutY="358.0" mnemonicParsing="false" onAction="#openAlbum" prefHeight="31.0" prefWidth="59.0" text="Open" />
+      <Button layoutX="215.0" layoutY="405.0" mnemonicParsing="false" onAction="#photoSearch" prefHeight="39.0" prefWidth="149.0" text="Photo Search" />
+   </children>
+</Pane>
